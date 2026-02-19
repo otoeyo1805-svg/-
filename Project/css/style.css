@@ -1,0 +1,97 @@
+/* ===== BASE ===== */
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    overflow-x: hidden;
+    text-align: center;
+}
+
+/* ===== พื้นหลัง ===== */
+.background {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.shape {
+    position: absolute;
+    opacity: 0.5;
+    animation: float 10s infinite ease-in-out;
+}
+
+.circle {
+    width: 180px;
+    height: 180px;
+    background: #ffd6e8;
+    border-radius: 50%;
+    top: 10%;
+    left: 10%;
+}
+
+.square {
+    width: 160px;
+    height: 160px;
+    background: #cfcafa;
+    border-radius: 30px;
+    bottom: 15%;
+    right: 10%;
+}
+
+.small {
+    width: 100px;
+    height: 100px;
+    background: #bde0fe;
+    top: 60%;
+    left: 70%;
+}
+
+/* ===== ตัวการ์ตูน ===== */
+.decor-character {
+    position: absolute;
+    font-size: 48px;
+    animation: float 6s infinite ease-in-out;
+    z-index: 2;
+}
+
+.char-1 { top: 12%; left: 5%; }
+.char-2 { bottom: 15%; left: 8%; }
+.char-3 { top: 15%; right: 6%; }
+.char-4 { bottom: 12%; right: 10%; }
+
+/* ===== ปุ่มเลื่อน ===== */
+.scroll-btns {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.scroll-btns button {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #5a4fcf;
+    background: linear-gradient(135deg, #ffd1dc, #cfcafa);
+    box-shadow: 0 8px 18px rgba(243, 239, 239, 0.2);
+    transition: 0.25s;
+}
+
+.scroll-btns button:hover {
+    transform: translateY(-4px) scale(1.1);
+}
+
+/* ===== Animation ===== */
+@keyframes float {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- แก้ warning และรองรับมือถือ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>✨ยินดีต้อนรับ✨</title>
+
+    <!-- แนะนำใช้ตัวพิมพ์เล็กให้ตรงโฟลเดอร์ -->
+    <link rel="stylesheet" href="css/intro.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== พื้นหลัง ===== -->
+<div class="background">
+    <span class="shape circle"></span>
+    <span class="shape square"></span>
+    <span class="shape circle small"></span>
+</div>
+
+<!-- ===== ตัวการ์ตูนลอย ===== -->
+<div class="decor-character char-1">👦</div>
+<div class="decor-character char-2">👧</div>
+<div class="decor-character char-3">📐</div>
+<div class="decor-character char-4">➕</div>
+
+<!-- ===== กล่องกลาง ===== -->
+<div class="container intro">
+
+    <div class="mascot">
+        <div class="mascot-icon">🎓✨</div>
+        <div class="mascot-text">✨ยินดีต้อนรับ✨</div>
+    </div>
+
+    <!-- ❗ ปิด h1 ให้ถูกต้อง -->
+    <h1>
+        การออกแบบและพัฒนาสื่อกราฟฟิกเคลื่อนไหวเพื่อเสริมสร้างทักษะการเรียนรู้คณิตศาสตร์
+    </h1>
+
+    <div class="subtitle">
+        เรียนรู้คณิตศาสตร์แสนสนุก
+    </div>
+
+    <button class="start-btn" onclick="goNext()">
+        🚀 เริ่มเรียนเลย ✨
+    </button>
+</div>
+
+<!-- ===== ปุ่มเลื่อนขึ้น-ลง ===== -->
+<div class="scroll-btns">
+    <button id="scrollUp">⬆</button>
+    <button id="scrollDown">⬇</button>
+</div>
+
+<!-- ===== Script ===== -->
+<script>
+function goNext() {
+    window.location.href = "index.html";
+}
+
+const scrollUp = document.getElementById("scrollUp");
+const scrollDown = document.getElementById("scrollDown");
+
+scrollUp.onclick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+scrollDown.onclick = () => {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+};
+</script>
+
+</body>
+</html>
