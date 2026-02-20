@@ -2,7 +2,7 @@
 body {
     margin: 0;
     min-height: 100vh;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Mali', cursive;
     background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
     overflow-x: hidden;
     text-align: center;
@@ -82,7 +82,7 @@ body {
     font-size: 20px;
     color: #5a4fcf;
     background: linear-gradient(135deg, #ffd1dc, #cfcafa);
-    box-shadow: 0 8px 18px rgba(243, 239, 239, 0.2);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
     transition: 0.25s;
 }
 
@@ -90,8 +90,56 @@ body {
     transform: translateY(-4px) scale(1.1);
 }
 
+/* ===== การ์ดลิงก์ ===== */
+.card {
+    text-decoration: none;
+    color: black;
+}
+
 /* ===== Animation ===== */
 @keyframes float {
     0%,100% { transform: translateY(0); }
     50% { transform: translateY(-20px); }
+}
+
+/* ===================================== */
+/* 📱 Responsive สำหรับมือถือ */
+/* ===================================== */
+
+@media (max-width: 480px) {
+
+    .decor-character {
+        font-size: 32px;
+    }
+
+    .circle {
+        width: 120px;
+        height: 120px;
+    }
+
+    .square {
+        width: 110px;
+        height: 110px;
+    }
+
+    .small {
+        width: 70px;
+        height: 70px;
+    }
+
+    .scroll-btns {
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .scroll-btns button {
+        width: 38px;
+        height: 38px;
+        font-size: 16px;
+    }
+
+}
+body {
+    max-width: 430px;
+    margin: auto;
 }
