@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ทบทวนการเรียนการสอนคณิตศาสตร์</title>
+    <title>✨ยินดีต้อนรับ✨</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Mali:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/page2.css">
+    <link rel="stylesheet" href="css/intro.css">
 </head>
 
 <body>
@@ -20,75 +20,46 @@
     <span class="shape circle"></span>
     <span class="shape square"></span>
     <span class="shape circle small"></span>
-    <span class="shape square small"></span>
-
-    <span class="decor-character char-1">🧑‍🎓</span>
-    <span class="decor-character char-2">🎈</span>
-    <span class="decor-character char-3">🧑‍🏫</span>
-    <span class="decor-character char-4">❤️</span>
-    <span class="decor-character char-6">⭐</span>
 </div>
 
-<!-- ===== กล่องหลัก (จัดกลาง) ===== -->
+<!-- ===== ตัวการ์ตูนลอย ===== -->
+<div class="decor-character char-1">👦</div>
+<div class="decor-character char-2">👧</div>
+<div class="decor-character char-3">📐</div>
+<div class="decor-character char-4">➕</div>
+
+<!-- ===== จัดกลางจอ ===== -->
 <div class="page-wrapper">
 
-    <div class="container">
+    <div class="container intro">
 
         <div class="mascot">
-            <div class="mascot-icon">🧑‍🎓📐</div>
+            <div class="mascot-icon">🎓✨</div>
+            <div class="mascot-text">✨ยินดีต้อนรับ✨</div>
         </div>
 
-        <h1>✨ ทบทวนการเรียนการสอนคณิตศาสตร์ ✨</h1>
-        <p class="subtitle">คลิปวิดีโอน่ารู้</p>
+        <h1>
+            การออกแบบและพัฒนาสื่อกราฟฟิกเคลื่อนไหว
+            เพื่อเสริมสร้างทักษะการเรียนรู้คณิตศาสตร์
+        </h1>
 
-        <!-- ===== เมนู ===== -->
-        <div class="menu">
-
-            <a href="video1.html" class="card">
-                <span class="icon">📐</span>
-                <div class="text">
-                    <h3>ห.ร.ม. และ ค.ร.น</h3>
-                </div>
-            </a>
-
-            <a href="video2.html" class="card">
-                <span class="icon">➕</span>
-                <div class="text">
-                    <h3>ทศนิยม</h3>
-                </div>
-            </a>
-
-            <a href="video3.html" class="card">
-                <span class="icon">🔺</span>
-                <div class="text">
-                    <h3>การบวก ลบ คูณ หารระคนของเศษส่วนและจำนวนคละ</h3>
-                </div>
-            </a>
-
-            <a href="video4.html" class="card">
-                <span class="icon">🔷</span>
-                <div class="text">
-                    <h3>เศษส่วนและการบวกการลบเศษส่วนและจำนวนคละ</h3>
-                </div>
-            </a>
-
-            <a href="video5.html" class="card">
-                <span class="icon">🔵</span>
-                <div class="text">
-                    <h3>อัตราส่วนและร้อยละ</h3>
-                </div>
-            </a>
-
+        <div class="subtitle">
+            เรียนรู้คณิตศาสตร์แสนสนุก
         </div>
 
-        <!-- ปุ่มกลับ -->
-        <button class="back-btn" onclick="window.location.href='intro.html'">
-            ⬅ กลับหน้าแรก
+        <button class="start-btn" onclick="goNext()">
+            🚀 เริ่มเรียนเลย ✨
         </button>
 
     </div>
 
 </div>
+
+<script>
+function goNext() {
+    window.location.href = "index.html";
+}
+</script>
 
 </body>
 </html>
